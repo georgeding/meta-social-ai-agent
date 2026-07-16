@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "setup": "node scripts/setup.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260501.0",

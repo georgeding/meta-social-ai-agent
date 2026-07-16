@@ -2,7 +2,18 @@
 
 A Claude-powered customer-service agent for **Instagram DMs** and **WhatsApp**, running on a single Cloudflare Worker. One webhook handles both channels: the agent answers common questions from an editable knowledge bank, looks things up with tools, and **escalates anything sensitive to a human** (refunds, complaints, money, uncertainty). Staff reply from WhatsApp; the reply routes back to the customer.
 
-Built to be forked: edit `src/config.ts`, add your secrets, `wrangler deploy`.
+Built to be forked: run one wizard, then deploy.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/georgeding/meta-social-ai-agent)
+
+```bash
+git clone https://github.com/georgeding/meta-social-ai-agent
+cd meta-social-ai-agent && npm install
+npm run setup     # interactive: business details, database, secrets
+npm run deploy
+```
+
+The **Deploy to Cloudflare** button forks the repo and provisions the Worker in your account in one click; then run `npm run setup` locally to fill in your business details and secrets. Or do it all from the CLI with the commands above.
 
 ## Features
 
