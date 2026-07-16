@@ -1,0 +1,13 @@
+# Copy to .dev.vars for local `wrangler dev` (gitignored). Same keys as
+# the `wrangler secret put` list in the README.
+AI_API_KEY=
+AI_BASE_URL=https://api.anthropic.com/v1
+AI_MODEL=claude-sonnet-4-6
+META_VERIFY_TOKEN=
+META_APP_SECRET=
+META_APP_SECRET_2=
+IG_ACCESS_TOKEN=
+WA_ACCESS_TOKEN=
+WA_PHONE_NUMBER_ID=
+ADMIN_WA_NUMBERS=
+RESEND_API_KEY=

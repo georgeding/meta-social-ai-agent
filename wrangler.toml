@@ -1,0 +1,16 @@
+name = "meta-social-ai-agent"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+
+[vars]
+# Staged rollout switch. Keep "false" until you've watched real messages
+# arrive by email and reviewed the knowledge bank; then flip to "true".
+AGENT_ENABLED = "false"
+
+# Uncomment after `wrangler d1 create social-agent` and paste the id it
+# prints. Without this binding the bot runs stateless (no memory, no
+# editable KB, no reply caps) — everything else still works.
+#[[d1_databases]]
+#binding = "DB"
+#database_name = "social-agent"
+#database_id = "PASTE-DATABASE-ID-HERE"
